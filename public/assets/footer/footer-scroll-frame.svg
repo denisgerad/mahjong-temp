@@ -1,0 +1,132 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1440 960"
+  preserveAspectRatio="none"
+  fill="none"
+>
+  <!--
+    HANGING SCROLL ARCHITECTURAL FRAME
+    Indian Mahjong Association — Footer overlay
+    ─────────────────────────────────────────────
+    Elements follow traditional 立軸 (vertical hanging scroll) structure:
+      軸桿   top + bottom rods (horizontal bars with end knobs)
+      隔水   mounting-strip dividers (horizontal rules, double-line)
+      裱邊   side mounting strips (vertical rules)
+      題簽   label panel (top-centre cutout)
+      角飾   corner ornaments (small diamonds at intersections)
+
+    All strokes use rgba(198,168,122, …) — the IMA soft-gold token.
+    No fill on structural elements. This SVG is overlaid full-bleed
+    with backgroundSize 100% 100% — preserveAspectRatio="none" ensures
+    it stretches cleanly to any footer proportion.
+  -->
+
+  <!-- ═══════════════════════════════════════
+       TOP ROD — 軸桿 (upper roller)
+       y range 10–18, full width
+       ═══════════════════════════════════════ -->
+  <rect x="28" y="10" width="1384" height="8" rx="4"
+        fill="rgba(198,168,122,0.28)" />
+  <!-- End knobs -->
+  <circle cx="24"   cy="14" r="12" fill="rgba(198,168,122,0.18)"
+          stroke="rgba(198,168,122,0.38)" stroke-width="1" />
+  <circle cx="1416" cy="14" r="12" fill="rgba(198,168,122,0.18)"
+          stroke="rgba(198,168,122,0.38)" stroke-width="1" />
+  <!-- Inner knob marks -->
+  <circle cx="24"   cy="14" r="5"  fill="rgba(198,168,122,0.22)" />
+  <circle cx="1416" cy="14" r="5"  fill="rgba(198,168,122,0.22)" />
+
+  <!-- ═══════════════════════════════════════
+       LABEL PANEL — 題簽 (top-centre cartouche)
+       Sits on the top rod, centred.
+       ═══════════════════════════════════════ -->
+  <rect x="640" y="6" width="160" height="34" rx="5"
+        fill="rgba(198,168,122,0.05)"
+        stroke="rgba(198,168,122,0.24)" stroke-width="0.75" />
+  <!-- Inner label rule -->
+  <line x1="656" y1="23" x2="784" y2="23"
+        stroke="rgba(198,168,122,0.14)" stroke-width="0.5" />
+
+  <!-- ═══════════════════════════════════════
+       SIDE MOUNTING STRIPS — 裱邊 (left + right rails)
+       Vertical rules running full inner height.
+       ═══════════════════════════════════════ -->
+  <!-- Left rail -->
+  <line x1="20" y1="26" x2="20" y2="934"
+        stroke="rgba(198,168,122,0.22)" stroke-width="0.75" />
+  <line x1="40" y1="32" x2="40" y2="928"
+        stroke="rgba(198,168,122,0.10)" stroke-width="0.5" />
+  <!-- Right rail -->
+  <line x1="1420" y1="26" x2="1420" y2="934"
+        stroke="rgba(198,168,122,0.22)" stroke-width="0.75" />
+  <line x1="1400" y1="32" x2="1400" y2="928"
+        stroke="rgba(198,168,122,0.10)" stroke-width="0.5" />
+
+  <!-- ═══════════════════════════════════════
+       UPPER MOUNTING STRIP — 隔水 (partition)
+       Divides landscape zone from content zone.
+       Position y ≈ 400 (matched to CSS spacer height).
+       ═══════════════════════════════════════ -->
+  <line x1="28" y1="400" x2="1412" y2="400"
+        stroke="rgba(198,168,122,0.42)" stroke-width="1" />
+  <line x1="28" y1="404" x2="1412" y2="404"
+        stroke="rgba(198,168,122,0.14)" stroke-width="0.5" />
+  <!-- Corner ornaments at upper strip × side rail intersections -->
+  <!-- Left diamond -->
+  <rect x="12" y="392" width="16" height="16" rx="1"
+        stroke="rgba(198,168,122,0.42)" stroke-width="0.75" fill="none"
+        transform="rotate(45 20 400)" />
+  <!-- Right diamond -->
+  <rect x="1412" y="392" width="16" height="16" rx="1"
+        stroke="rgba(198,168,122,0.42)" stroke-width="0.75" fill="none"
+        transform="rotate(45 1420 400)" />
+  <!-- Centre mark on upper strip -->
+  <circle cx="720" cy="402" r="4"
+          fill="none" stroke="rgba(198,168,122,0.36)" stroke-width="0.75" />
+  <circle cx="720" cy="402" r="8"
+          fill="none" stroke="rgba(198,168,122,0.16)" stroke-width="0.5" />
+
+  <!-- ═══════════════════════════════════════
+       LOWER MOUNTING STRIP — 隔水 (partition)
+       Divides content zone from bottom mount.
+       Position y ≈ 860.
+       ═══════════════════════════════════════ -->
+  <line x1="28" y1="860" x2="1412" y2="860"
+        stroke="rgba(198,168,122,0.36)" stroke-width="1" />
+  <line x1="28" y1="864" x2="1412" y2="864"
+        stroke="rgba(198,168,122,0.11)" stroke-width="0.5" />
+  <!-- Corner ornaments at lower strip intersections -->
+  <rect x="12" y="852" width="16" height="16" rx="1"
+        stroke="rgba(198,168,122,0.35)" stroke-width="0.75" fill="none"
+        transform="rotate(45 20 860)" />
+  <rect x="1412" y="852" width="16" height="16" rx="1"
+        stroke="rgba(198,168,122,0.35)" stroke-width="0.75" fill="none"
+        transform="rotate(45 1420 860)" />
+  <!-- Centre mark -->
+  <circle cx="720" cy="862" r="4"
+          fill="none" stroke="rgba(198,168,122,0.30)" stroke-width="0.75" />
+
+  <!-- ═══════════════════════════════════════
+       BOTTOM ROD — 軸桿 (lower roller)
+       y range 942–950, full width
+       ═══════════════════════════════════════ -->
+  <rect x="28" y="942" width="1384" height="8" rx="4"
+        fill="rgba(198,168,122,0.20)" />
+  <circle cx="24"   cy="946" r="12" fill="rgba(198,168,122,0.14)"
+          stroke="rgba(198,168,122,0.30)" stroke-width="1" />
+  <circle cx="1416" cy="946" r="12" fill="rgba(198,168,122,0.14)"
+          stroke="rgba(198,168,122,0.30)" stroke-width="1" />
+  <circle cx="24"   cy="946" r="5"  fill="rgba(198,168,122,0.16)" />
+  <circle cx="1416" cy="946" r="5"  fill="rgba(198,168,122,0.16)" />
+
+  <!-- ═══════════════════════════════════════
+       INNER CONTENT MARGIN LINES
+       Very subtle inset rules — define the live
+       content area within the outer frame rails.
+       ═══════════════════════════════════════ -->
+  <line x1="56" y1="416" x2="56" y2="844"
+        stroke="rgba(198,168,122,0.07)" stroke-width="0.5" />
+  <line x1="1384" y1="416" x2="1384" y2="844"
+        stroke="rgba(198,168,122,0.07)" stroke-width="0.5" />
+
+</svg>

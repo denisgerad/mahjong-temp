@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5efe4;
+  --foreground: #2d2926;
+
+  --cream: #f5efe4;
+  --burgundy: #7c1f2d;
+  --jade: #2f5d50;
+  --sapphire: #456b8c;
+  --tea-brown: #8a6a4a;
+  --soft-gold: #c6a87a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+.paper-grain {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 252, 246, 0.7), transparent 22%),
+    radial-gradient(circle at 78% 32%, rgba(255, 248, 238, 0.55), transparent 18%),
+    linear-gradient(rgba(138, 106, 74, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(138, 106, 74, 0.06) 1px, transparent 1px);
+  background-size: auto, auto, 24px 24px, 24px 24px;
+}
+
+.hero-fade-mask {
+  -webkit-mask-image:
+    radial-gradient(circle at 56% 46%, black 0%, black 48%, transparent 84%),
+    linear-gradient(180deg, transparent 0%, black 12%, black 84%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    radial-gradient(circle at 56% 46%, black 0%, black 48%, transparent 84%),
+    linear-gradient(180deg, transparent 0%, black 12%, black 84%, transparent 100%);
+  mask-composite: intersect;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}

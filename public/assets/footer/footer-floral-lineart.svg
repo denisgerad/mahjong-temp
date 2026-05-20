@@ -1,0 +1,208 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 280 420"
+  fill="none"
+>
+  <!--
+    BOTANICAL FLORAL LINEART — Chinese plum blossom branch
+    Indian Mahjong Association — Footer texture layer
+    ─────────────────────────────────────────────────────
+    Style:   Chinese ink-painting linework (白描 báimiáo style)
+             Delicate strokes, organic movement, no fill.
+    Subject: Prunus mume (梅花) — plum blossom — a symbol of
+             resilience, companionship, and endurance through
+             difficult seasons. Culturally aligned with IMA's
+             founding story (army postings, unfamiliar places).
+    Colour:  #c6a87a (IMA soft-gold) — single tone throughout,
+             varied opacity for depth.
+    Usage:   Placed bottom-right, 38% w × 68% h of footer,
+             at 8% opacity — textural presence only.
+    ─────────────────────────────────────────────────────
+    When real illustrated asset is created, replace this file
+    with a higher-fidelity version at the same path. Opacity
+    and positioning are controlled by the Footer component CSS.
+  -->
+
+  <!-- ══════════════════════════════════
+       MAIN BRANCH — diagonal trunk
+       Flows from lower-centre to upper-left.
+       Thicker at base, tapers toward crown.
+       ══════════════════════════════════ -->
+  <path
+    d="M 148 418
+       C 138 378 114 350 96 300
+       C 78 250 94 202 90 162
+       C 86 122 70 80 44 28"
+    stroke="#c6a87a" stroke-width="2.8"
+    stroke-linecap="round" stroke-linejoin="round"
+    opacity="0.75"
+  />
+  <!-- Branch bark texture — secondary stroke, slightly offset -->
+  <path
+    d="M 144 418
+       C 134 376 112 346 96 296
+       C 80 248 95 200 92 160
+       C 88 118 72 76 48 28"
+    stroke="#c6a87a" stroke-width="0.7"
+    stroke-linecap="round" stroke-linejoin="round"
+    opacity="0.25"
+  />
+
+  <!-- ══════════════════════════════════
+       SUB-BRANCH 1 — mid-right
+       Emerges from main at ~(92, 300).
+       ══════════════════════════════════ -->
+  <path
+    d="M 92 298 C 118 284 148 274 176 264"
+    stroke="#c6a87a" stroke-width="1.6"
+    stroke-linecap="round"
+    opacity="0.65"
+  />
+
+  <!-- ══════════════════════════════════
+       SUB-BRANCH 2 — upper-right
+       Emerges from main at ~(90, 200).
+       ══════════════════════════════════ -->
+  <path
+    d="M 90 202 C 116 188 146 178 174 168"
+    stroke="#c6a87a" stroke-width="1.4"
+    stroke-linecap="round"
+    opacity="0.60"
+  />
+
+  <!-- ══════════════════════════════════
+       SUB-BRANCH 3 — lower-left
+       Emerges from main at ~(93, 296).
+       ══════════════════════════════════ -->
+  <path
+    d="M 93 298 C 68 308 44 316 20 322"
+    stroke="#c6a87a" stroke-width="1.4"
+    stroke-linecap="round"
+    opacity="0.55"
+  />
+
+  <!-- ══════════════════════════════════
+       SUB-BRANCH 4 — upper-left spur
+       Short branch near crown.
+       ══════════════════════════════════ -->
+  <path
+    d="M 74 150 C 52 142 30 138 12 136"
+    stroke="#c6a87a" stroke-width="1.1"
+    stroke-linecap="round"
+    opacity="0.50"
+  />
+
+  <!-- ══════════════════════════════════
+       BLOSSOM 1 — end of branch 1
+       Centre: (176, 264)
+       Five petals as circles at r=9 from centre.
+       ══════════════════════════════════ -->
+  <g opacity="0.68">
+    <!-- petals — 5 circles at 72° intervals, r=5.5 each -->
+    <circle cx="176" cy="255" r="5.5" stroke="#c6a87a" stroke-width="1" />
+    <circle cx="184.6" cy="261.2" r="5.5" stroke="#c6a87a" stroke-width="1" />
+    <circle cx="181.3" cy="272.3" r="5.5" stroke="#c6a87a" stroke-width="1" />
+    <circle cx="170.7" cy="272.3" r="5.5" stroke="#c6a87a" stroke-width="1" />
+    <circle cx="167.4" cy="261.2" r="5.5" stroke="#c6a87a" stroke-width="1" />
+    <!-- stamen centre -->
+    <circle cx="176" cy="264" r="2.2" stroke="#c6a87a" stroke-width="0.75" opacity="0.7" />
+    <!-- stamen dots -->
+    <circle cx="176" cy="260" r="0.9" fill="#c6a87a" opacity="0.55" />
+    <circle cx="178.8" cy="261.8" r="0.9" fill="#c6a87a" opacity="0.55" />
+    <circle cx="177.7" cy="265" r="0.9" fill="#c6a87a" opacity="0.55" />
+    <circle cx="174.3" cy="265" r="0.9" fill="#c6a87a" opacity="0.55" />
+    <circle cx="173.2" cy="261.8" r="0.9" fill="#c6a87a" opacity="0.55" />
+  </g>
+
+  <!-- ══════════════════════════════════
+       BLOSSOM 2 — end of branch 2
+       Centre: (174, 168)
+       Slightly more open — rotated 22° for variety.
+       ══════════════════════════════════ -->
+  <g opacity="0.62">
+    <circle cx="174" cy="159" r="5" stroke="#c6a87a" stroke-width="0.9" />
+    <circle cx="182.6" cy="165.2" r="5" stroke="#c6a87a" stroke-width="0.9" />
+    <circle cx="179.3" cy="176.3" r="5" stroke="#c6a87a" stroke-width="0.9" />
+    <circle cx="168.7" cy="176.3" r="5" stroke="#c6a87a" stroke-width="0.9" />
+    <circle cx="165.4" cy="165.2" r="5" stroke="#c6a87a" stroke-width="0.9" />
+    <circle cx="174" cy="168" r="2" stroke="#c6a87a" stroke-width="0.7" opacity="0.6" />
+  </g>
+
+  <!-- ══════════════════════════════════
+       BLOSSOM 3 (BUD) — near crown
+       Centre: (48, 30) — partial, emerging bud.
+       Just 3 petals visible, rest behind branch.
+       ══════════════════════════════════ -->
+  <g opacity="0.48">
+    <circle cx="48" cy="21" r="4.5" stroke="#c6a87a" stroke-width="0.85" />
+    <circle cx="56.6" cy="27.2" r="4.5" stroke="#c6a87a" stroke-width="0.85" />
+    <circle cx="53.3" cy="38.3" r="4.5" stroke="#c6a87a" stroke-width="0.85" />
+    <circle cx="48" cy="30" r="1.8" stroke="#c6a87a" stroke-width="0.65" opacity="0.55" />
+  </g>
+
+  <!-- ══════════════════════════════════
+       LEAVES — pointed oval bezier paths
+       Chinese painting leaf forms: single
+       brushstroke, pointed tip and base.
+       ══════════════════════════════════ -->
+
+  <!-- Leaf 1 — near branch 1 junction, points right -->
+  <path
+    d="M 108 286 C 122 274 148 272 158 280
+       C 148 290 122 292 108 286 Z"
+    stroke="#c6a87a" stroke-width="0.9"
+    fill="rgba(198,168,122,0.04)"
+    opacity="0.52"
+  />
+
+  <!-- Leaf 2 — on main branch, mid-left, points left -->
+  <path
+    d="M 88 228 C 72 216 58 214 50 222
+       C 58 232 72 234 88 228 Z"
+    stroke="#c6a87a" stroke-width="0.9"
+    fill="rgba(198,168,122,0.04)"
+    opacity="0.48"
+  />
+
+  <!-- Leaf 3 — near branch 2, points upper-right -->
+  <path
+    d="M 106 188 C 118 174 138 170 146 178
+       C 138 188 118 192 106 188 Z"
+    stroke="#c6a87a" stroke-width="0.85"
+    fill="rgba(198,168,122,0.03)"
+    opacity="0.44"
+  />
+
+  <!-- Leaf 4 — branch 3, near tip, points lower-left -->
+  <path
+    d="M 32 316 C 22 304 24 292 32 288
+       C 38 292 40 306 32 316 Z"
+    stroke="#c6a87a" stroke-width="0.85"
+    fill="rgba(198,168,122,0.03)"
+    opacity="0.42"
+  />
+
+  <!-- Leaf 5 — near crown, small -->
+  <path
+    d="M 62 118 C 50 108 46 96 54 90
+       C 62 94 66 108 62 118 Z"
+    stroke="#c6a87a" stroke-width="0.8"
+    fill="rgba(198,168,122,0.03)"
+    opacity="0.40"
+  />
+
+  <!-- ══════════════════════════════════
+       FALLEN PETALS — two loose petals
+       near branch 1 junction, suggesting
+       the season of bloom and letting go.
+       ══════════════════════════════════ -->
+  <ellipse cx="136" cy="308" rx="4.5" ry="7"
+           stroke="#c6a87a" stroke-width="0.75"
+           transform="rotate(-25 136 308)"
+           opacity="0.30" />
+  <ellipse cx="156" cy="316" rx="4" ry="6.5"
+           stroke="#c6a87a" stroke-width="0.75"
+           transform="rotate(15 156 316)"
+           opacity="0.24" />
+
+</svg>

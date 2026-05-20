@@ -1,0 +1,150 @@
+import Image from "next/image";
+
+export default function Footer() {
+  return (
+    <footer
+      id="contact"
+      className="relative overflow-hidden bg-[#1b2f25] text-[#f0e6d6]"
+    >
+      <div aria-hidden="true" className="absolute inset-0">
+        <Image
+          src="/assets/footer/footer-landscape.png"
+          alt=""
+          fill
+          className="object-cover object-[center_bottom]"
+          style={{ opacity: 0.7 }}
+        />
+        <div className="absolute inset-0 bg-[rgba(27,47,37,0.38)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_110%_100%_at_50%_60%,transparent_20%,rgba(27,47,37,0.32)_68%,rgba(27,47,37,0.72)_100%)]" />
+        <div className="absolute inset-x-0 top-0 h-16 bg-[linear-gradient(180deg,#1b2f25,transparent)]" />
+      </div>
+
+      <div
+        className="relative z-10 mx-auto max-w-7xl px-8 py-14 lg:px-14 lg:py-16"
+        style={{ textShadow: "0 1px 6px rgba(0,0,0,0.28)" }}
+      >
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-12 xl:gap-16">
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/assets/logos/logo.jpeg"
+                alt="IMA"
+                width={34}
+                height={34}
+                className="rounded-lg opacity-[0.88]"
+              />
+              <span className="text-[0.75rem] uppercase tracking-[0.26em] text-[#b8975a]">
+                Indian Mahjong Association
+              </span>
+            </div>
+            <p className="max-w-[32ch] text-[0.91rem] leading-[1.85] text-[#b8975a]">
+              Preserving the authentic Chinese game of Mahjong in India through
+              culture, companionship, and strategy.
+            </p>
+            <a
+              href="https://www.instagram.com/indianmahjongassociation_/?hl=en"
+              className="flex w-fit items-center gap-2 text-[0.82rem] text-[#9e968c] transition duration-200 hover:text-[#c6a87a]"
+            >
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+              indianmahjongassociation
+            </a>
+          </div>
+
+          <div>
+            <p className="text-[0.6rem] uppercase tracking-[0.44em] text-[#b8975a]">
+              Explore
+            </p>
+            <nav className="mt-5 flex flex-wrap items-center gap-y-1 sm:flex-col sm:items-start sm:gap-2.5" aria-label="Explore">
+              <a href="#membership" className="text-[0.93rem] text-[#b0a8a0] transition duration-200 hover:text-[#f0e6d6]">
+                Membership
+              </a>
+              <span className="mx-2 text-[#8a8278]/40 sm:hidden" aria-hidden="true">·</span>
+              <a href="#events" className="text-[0.93rem] text-[#b0a8a0] transition duration-200 hover:text-[#f0e6d6]">
+                Events
+              </a>
+            </nav>
+          </div>
+
+          <div>
+            <p className="text-[0.6rem] uppercase tracking-[0.44em] text-[#b8975a]">
+              Learn
+            </p>
+            <nav className="mt-5 flex flex-wrap items-center gap-y-1 sm:flex-col sm:items-start sm:gap-2.5" aria-label="Learn">
+              <a href="#trainers" className="text-[0.93rem] text-[#b0a8a0] transition duration-200 hover:text-[#f0e6d6]">
+                Trainers
+              </a>
+              <span className="mx-2 text-[#8a8278]/40 sm:hidden" aria-hidden="true">·</span>
+              <a href="#classes" className="text-[0.93rem] text-[#b0a8a0] transition duration-200 hover:text-[#f0e6d6]">
+                Classes
+              </a>
+            </nav>
+          </div>
+
+          <div>
+            <p className="text-[0.6rem] uppercase tracking-[0.44em] text-[#b8975a]">
+              About
+            </p>
+            <nav className="mt-5 flex flex-col gap-2.5" aria-label="About">
+              <a
+                href="#story"
+                className="text-[0.93rem] text-[#b0a8a0] transition duration-200 hover:text-[#f0e6d6]"
+              >
+                Our Story
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <div className="mt-12 lg:mt-14">
+          <div className="mb-5 h-px bg-[linear-gradient(90deg,rgba(198,168,122,0),rgba(198,168,122,0.18)_28%,rgba(198,168,122,0.18)_72%,rgba(198,168,122,0))]" />
+          <p className="mt-4 text-[0.63rem] tracking-[0.28em] text-[#b8975a]">
+            Payments secured by Razorpay
+          </p>
+        </div>
+
+        <div className="mt-6 pb-0">
+          <div className="mx-auto mb-5 h-px w-24 bg-[linear-gradient(90deg,rgba(198,168,122,0),rgba(198,168,122,0.22)_50%,rgba(198,168,122,0))]" />
+          <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-[0.77rem] text-[#7e7a74]">
+              © 2026 Indian Mahjong Association
+            </p>
+            <div className="flex gap-6">
+              <a
+                href="/privacy"
+                className="text-[0.77rem] text-[#7e7a74] transition duration-200 hover:text-[#b0a8a0]"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="/terms"
+                className="text-[0.77rem] text-[#7e7a74] transition duration-200 hover:text-[#b0a8a0]"
+              >
+                Terms of Use
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
